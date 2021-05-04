@@ -1,0 +1,125 @@
+input {
+  font-size: initial;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  transition: all 0.3s linear;
+  /* visibility: hidden; */
+  /* z-index: -1; */
+
+  visibility: visible;
+  z-index: 10;
+}
+
+/* #modal-container { */
+
+.modal-container {
+  flex-direction: column !important;
+
+  position: relative;
+  margin: 1em;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 0.25rem !important;
+  place-items: center;
+  cursor: auto;
+}
+
+#modal-container {
+  display: none !important;
+}
+
+#modal-container.modal-container {
+  display: flex !important;
+}
+
+label {
+  color: #2f1c6a !important;
+}
+
+input[type='text'] {
+  height: 70px !important;
+  margin-bottom: 0.25em !important;
+  border-radius: 5px !important;
+  border: 1px solid grey !important;
+}
+
+.entry-content {
+  display: flex;
+  justify-content: center;
+}
+
+.entry-content p {
+  display: none !important;
+}
+
+/* .close {
+  color: #383f48 !important;
+} */
+
+.close-btn {
+  position: absolute !important;
+  top: 7px;
+  right: 10px;
+
+  padding: 0;
+  border: 0;
+
+  background: none;
+  cursor: pointer;
+}
+
+.modal-container p {
+  font-family: 'Andika', sans-serif;
+  color: #03324c;
+}
+
+.modal-container p:last-of-type {
+  margin-bottom: 1em;
+}
+.modal-container input:last-of-type {
+  margin-bottom: 2em !important;
+}
+
+.modal-container p {
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+  color: #313131;
+  text-transform: initial;
+}
+
+.modal-container .question-p {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #f28600;
+}
+
+.modal-container label {
+  font-family: 'Andika', sans-serif !important;
+  line-height: 1em;
+}
+
+.modal-container input {
+  width: 80% !important;
+  height: 2.5em !important;
+  margin-bottom: 1.5em !important;
+}
+
+.modal-container button {
+  border-radius: 5px !important;
+}
+
+/* form {
+  color: red;
+  background: green;
+  font-size: 22px;
+  padding: 15px;
+} */
